@@ -1,0 +1,6 @@
+{
+  "name": "ActionLens - Civic AI Action Platform",
+  "description": "AI-powered civic impact platform that turns scattered citizen complaints into prioritized, explainable, trackable action across Capture, Understand, Reveal, and Act.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

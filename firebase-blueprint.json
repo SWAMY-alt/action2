@@ -1,0 +1,86 @@
+{
+  "entities": {
+    "Report": {
+      "title": "Report",
+      "description": "Civic problem complaint report",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string",
+          "maxLength": 2000
+        },
+        "imageDataUrl": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string"
+        },
+        "lat": {
+          "type": "number"
+        },
+        "lng": {
+          "type": "number"
+        },
+        "addressText": {
+          "type": "string",
+          "maxLength": 500
+        },
+        "ward": {
+          "type": "string"
+        },
+        "aiSummary": {
+          "type": "string",
+          "maxLength": 500
+        },
+        "aiCategory": {
+          "type": "string"
+        },
+        "priorityScore": {
+          "type": "number"
+        },
+        "priorityLevel": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "assignedTo": {
+          "type": "string"
+        },
+        "citizenName": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "trackingCode": {
+          "type": "string"
+        },
+        "upvotes": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "id",
+        "createdAt",
+        "text",
+        "category",
+        "lat",
+        "lng",
+        "addressText",
+        "status",
+        "trackingCode"
+      ]
+    }
+  },
+  "firestore": {
+    "/reports/{reportId}": {
+      "schema": "Report",
+      "description": "Public civic problem complaints"
+    }
+  }
+}
